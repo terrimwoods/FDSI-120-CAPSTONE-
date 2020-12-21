@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>TransitionsBlog</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+{% block styles %}
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/main.min.css">
+<link rel="stylesheet" href="/static/css/blog.min.css">
+{% endblock %}
+
+
+          
+    
+  </head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">Enter at your own Risk</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Large</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="{% url 'login' %}">Sign-in/Sign-up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="https://www.reuters.com/news/archive/worldNews">World</a>
+      <a class="p-2 text-muted" href="https://apnews.com/">U.S.</a>
+      <a class="p-2 text-muted" href="https://www.wired.com/magazine/">Technology</a>
+      <a class="p-2 text-muted" href="https://www.ted.com/topics/design">Design</a>
+      <a class="p-2 text-muted" href="https://www.npr.org/sections/codeswitch/">Culture</a>
+      <a class="p-2 text-muted" href="https://blackbusines.com/">Business</a>
+      <a class="p-2 text-muted" href="https://pressrun.media">Politics</a>
+      <a class="p-2 text-muted" href="https://ideas.ted.com/tag/opinion-2/">Opinion</a>
+      <a class="p-2 text-muted" href="https://www.ted.com/talks?topics%5B%5D=science">Science</a>
+      <a class="p-2 text-muted" href="https://www.bwhi.org/">Health</a>
+      <a class="p-2 text-muted" href="https://www.sciencedaily.com/">Science</a>
+      <a class="p-2 text-muted" href="https://www.africanamericantravelers.com/">Travel</a>
+       <a class="p-2 text-muted" href="{% url 'income' %}">MoneyTracker</a>
+          </nav>
+  </div>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">This page is all about me, Terri M. Woods.</h1>
+      <p class="lead my-3">After spending over a quarter of my life working as an orthopedic technician, moving and traveling all over the world, I decided to give up and retire. </p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">More about me and the places I've traveled outside of the States.</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Me again</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        From the Firehose
+      </h3>
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">I don't know what a Firehose is, so I'm going to talk about me again</h2>
+        <p class="blog-post-meta">December 20, 2020 by <a href="#">Sheri Williams</a></p>
+
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+        <hr>
+        <p>I was born a twin in Camden, New Jersey to Allen and Thomasinia Woods.  I was the seventh out of nine children born to my parents. <a href="#">dis parturient montes</a>
+My father was moving up the ranks in the United States Navy so we moved around quite a bit giving me a desire to travel the world and experience new things.</p>
+<p>Growing up I was pretty quiet, good in school and average in sports. I enjoyed spending time with my family, mainly my twin and my mother who loved to cook and bake sweets. I loved that on my birthday she would bake my favorite cake and allow me to have it all to myself. Growing up with eight siblings in the house made this little generosity a heavenly delight. You have no idea!!<strong> Lies, I am a world class athlete. In my world.</strong>
+</p>
+        <blockquote>
+          <p>I had separation anxiety elementary school was hard. <strong>Obviously I didn't write this particular article.</strong>I went to community college, I hate school with a passion.</p>
+        </blockquote>
+        <p>Kindergarten was my worst year of school ever! Good thing that things got better as I mastered the levels of scholastics and graduated with honors.... well maybe not with honors but I did graduate and went on to college. I didn't really like college but I knew I needed it to elevate to where I wanted to be in life.</p>
+        <h2>More BS from my sister</h2>
+        <p>After finishing up a stint in college I entered into the United States Air Force where life opened up for me.</p>
+        <h3>My Travels.....</h3>
+        <p>The United States Airforce gave me the opportunity to travel while I work......</p>
+        <pre><code>She knows nothing of my travels or sacrifices</code></pre>
+        <p>
+Retiring from the Airforce was bittersweet. I made so many friends and colleagues that I miss but am so happy to be back in my own space doing what I like to do best, sleeping in, moving around town with friends, of course this was pre covid-19 and just doing nothing</p>
+        <h3>Retirement is Awesome</h3>
+        <p>Just doing nothing can get boring, just kidding! it is so nice to do nothing! However I did decide to take some online classes that brings me to this project right here. It has been challenging but insightful and sometimes ... what's the word I am looking for ... procrastination makes it almost imposible to search for things.</p>
+        <ul>
+          <li>Haiti for Humanitarian.</li>
+          <li>Qatar for security</li>
+          <li>Afghanistan for Operation Enduring Freedom.</li>
+          <li>Turkey, I got to live there for 15 months.</li>
+        </ul>
+        <p>State Side</p>
+        <ol>
+          <li>Davis-Monthan AFB Tuscon, Az; it's a dry heat</li>
+          <li>Elmondorf AFB Anchorage, Alaska; I learned to drive in the snow.</li>
+          <li>Barksdale AFB Shreveport, Louisiana; humidity will reck you.</li>
+          <li>Wright-Patterson AFB Fairborn, Ohio; still hate the snow.</li>
+        </ol>
+        <p>Like I said, she knows nothing about my travels; and she never came to visit me.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Hello, Me again</h2>
+        <p class="blog-post-meta">December 10, 2020 by <a href="#">Terri</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Guess who? It's Me</h2>
+        <p class="blog-post-meta">December 1, 2020 by <a href="#">Terri</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+      </div><!-- /.blog-post -->
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">This blog is about Me</h4>
+        <p class="mb-0">Master Seargeant<em>(RETIRED)</em>Terri M. Woods</p>
+      </div>
+ {% comment %}
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+   
+      
+       <ol class="list-unstyled mb-0">
+          <li><a href="#">March 2014</a></li>
+          <li><a href="#">February 2014</a></li>
+          <li><a href="#">January 2014</a></li>
+          <li><a href="#">December 2013</a></li>
+          <li><a href="#">November 2013</a></li>
+          <li><a href="#">October 2013</a></li>
+          <li><a href="#">September 2013</a></li>
+          <li><a href="#">August 2013</a></li>
+          <li><a href="#">July 2013</a></li>
+          <li><a href="#">June 2013</a></li>
+          <li><a href="#">May 2013</a></li>
+          <li><a href="#">April 2013</a></li>
+        </ol>
+      </div>
+{% endcomment %} 
+      <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+ <script src="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet"></script>
+</body>
+</html>
